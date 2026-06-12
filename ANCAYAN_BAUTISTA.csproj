@@ -1,0 +1,273 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{6BF59A2D-2EDC-4FD4-A035-E80B50DC36CC}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>ANCAYAN_BAUTISTA</RootNamespace>
+    <AssemblyName>ANCAYAN_BAUTISTA</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="receipt.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="receipt.Designer.cs">
+      <DependentUpon>receipt.cs</DependentUpon>
+    </Compile>
+    <Compile Include="shop.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="shop.Designer.cs">
+      <DependentUpon>shop.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="receipt.resx">
+      <DependentUpon>receipt.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="shop.resx">
+      <DependentUpon>shop.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\loading screen.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\sample bg.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\gearshop_bttn.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\peteggshop_bttn.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\seedshop_bttn.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Basic Sprinkler.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Advance Sprinkler.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Godly Sprinkler.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Master Sprinkler.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Grandmaster Sprinkler.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\trowel.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Watering Can.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Harvest Tool.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Recall Wrench.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Favorite Tool.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Trading Ticket.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Medium Toy.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Medium Treat.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Level Up Lollipop.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Friendship Pot.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Beanstalk.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Blueberry.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Burning Bud.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Cacao.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Coconut.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Dafodill.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Dragon Fruit.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Elder Strawberry.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Elder Strawberry1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Foxglove.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Lilac.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Rosy Delight.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Strawberry.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Sugar Apple.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Sunflower.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Tomato.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Bee Egg.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Bug Egg.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Common Egg.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Uncommon Egg.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Rare Egg.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Legendary Egg.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Mythical Egg.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\shopping-cart-add.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\store-alt %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\gag.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Advance Sprinkler1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Untitled design %282%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Untitled design %283%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Grow a Garden Stocks.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Untitled design %283%291.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Grow a Garden Stocks %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Grow a Garden Stocks %282%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Grow a Garden Stocks %283%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\add-to-basket.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\add-to-basket %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\home.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
